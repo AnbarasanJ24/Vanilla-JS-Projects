@@ -14,6 +14,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    ;
 }
 
 .quote-container {
@@ -22,7 +24,7 @@ body {
     padding: 20px 30px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 2px 5px 5px 5px rgb(12 12 12 / 18%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .quote-text {
@@ -60,7 +62,7 @@ button {
     background: #000;
     outline: none;
     padding: 0.5rem 1.8rem;
-    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 button:hover {
@@ -68,8 +70,8 @@ button:hover {
 }
 
 button:active {
-    transform: translate(0, 0.3rem);
-    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+    /* transform: translate(0, 0.3rem); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .twitter-button:hover {
@@ -84,9 +86,7 @@ button:active {
 
 .loader {
     border: 16px solid #f3f3f3;
-    /* Light grey */
     border-top: 16px solid #333;
-    /* Blue */
     border-radius: 50%;
     width: 120px;
     height: 120px;

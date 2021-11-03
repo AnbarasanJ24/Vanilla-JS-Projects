@@ -16,7 +16,6 @@ function newQuote() {
 
     author.textContent = quote.author || 'Unknown';
 
-    // check Quote Length
     if (quote.text.length > 120) {
         quoteText.classList.add('long-quote');
     } else {
@@ -32,7 +31,6 @@ async function getQuotes() {
         const data = await fetch(URL);
         quotes = await data.json();
         newQuote();
-        // console.log(quotes);
     } catch (err) {
         console.log("Error", err);
     }
@@ -47,8 +45,8 @@ function tweetQuote() {
 
 
 function showLoader() {
-    loader.hidden = false;
-    quoteContainer.hidden = true;
+    loader.hidden = false; // Loader Shouln't be hidden
+    quoteContainer.hidden = true; // Container should be hidden
 }
 
 function hideLoader() {
